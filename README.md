@@ -1,4 +1,4 @@
-Stego_lsb
+stego_lsb
 ===========
 
 This tool allows us to perform the LSB technique in images, with which we can hide texts (and other things) in the least significant bits of the image and, reciprocally, reveal them.
