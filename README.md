@@ -1,17 +1,18 @@
-StegoLSB.py
+Stego_lsb
 ===========
 
-Esta herramienta nos permite realizar la técnica LSB en imágenes, con la cual podemos ocultar textos (y otras cosas) en los bits menos significativos de la imagen y de forma reciproca, revelarlos
+This tool allows us to perform the LSB technique in images, with which we can hide texts (and other things) in the least significant bits of the image and, reciprocally, reveal them
 
-===
-Ocultar Información:
-  example.png : es la imagen donde se ocultara el secreto
-  secret.txt : es el mensaje que queremos incrustar en la imagen
+
+* **Hide Information**: it would save secretImageXX.png
   
->>>python StegoLSB.py -i example.png -l secret.txt  
+  example.png : it is the image where the secret will be hidden
+  secret.txt : it is the message that we want to embed in the image
+  
+  >python stego.py -i image.png -s file.txt  
 
-===
-Extraer Información:
-  image.png : es la imagen con el texto oculto, con la opción -x se revela
+* **Extract information**: it would save secretXX.txt
+  
+  image.png : it is the image with the hidden text, with the -E option it is revealed
 
->>>python StegoLSB.py -x -i image.png
+  >python stego.py -E -i secretimageXX.png
